@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+   <modules jcr:primaryType="jnt:modules">
+      <jahia-library-links j:dependencies="default"
+                           j:modulePriority="0"
+                           j:moduleType="module"
+                           j:title="jahia-library-links"
+                           jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                           jcr:primaryType="jnt:module">
+         <portlets jcr:primaryType="jnt:portletFolder"/>
+         <files jcr:primaryType="jnt:folder"/>
+         <contents jcr:primaryType="jnt:contentFolder">
+            <library-links jcr:primaryType="jnt:contentFolder">
+               <j:translation_en jcr:language="en"
+                                 jcr:mixinTypes="mix:title"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="Library links"/>
+               <j:translation_fr jcr:language="fr"
+                                 jcr:mixinTypes="mix:title"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="Bibliothèque de liens"/>
+            </library-links>
+         </contents>
+         <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+            <files jcr:primaryType="jnt:folder"/>
+            <contents jcr:primaryType="jnt:contentFolder"/>
+            <content-template j:applyOn="jcnt:referencedExternalLink"
+                              j:defaultTemplate="true"
+                              j:hiddenTemplate="false"
+                              j:priority="1"
+                              j:view="default"
+                              jcr:primaryType="jnt:contentTemplate">
+               <pagecontent jcr:primaryType="jnt:contentList">
+                  <main-resource-display j:mainResourceView="fake" jcr:primaryType="jnt:mainResourceDisplay"/>
+               </pagecontent>
+            </content-template>
+         </templates>
+      </jahia-library-links>
+   </modules>
+</content>
