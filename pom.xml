@@ -63,8 +63,10 @@
     </description>
 
     <scm>
-        <connection>scm:dummy:uri</connection>
-        <developerConnection>scm:dummy:uri</developerConnection>
+        <connection>scm:git:git@github.com:tleclere-jahia/jahia-library-links.git</connection>
+        <developerConnection>scm:git:git@github.com:tleclere-jahia/jahia-library-links.git</developerConnection>
+        <url>scm:git:git@github.com:tleclere-jahia/jahia-library-links.git</url>
+        <tag>HEAD</tag>
     </scm>
 
     <repositories>
